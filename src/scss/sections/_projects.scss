@@ -1,0 +1,38 @@
+.projects {
+    background: rgb(245, 245, 245);
+    padding: 60px 0;
+    min-height: 600px;
+    &__h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        font-size: 42px;
+    }
+    &__divider {
+        margin: 20px auto 0;
+        width: 100px;
+        height: 4px;
+    }
+    &__tabs {
+        background-color: inherit;
+        width: 400px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        .tab a.active {
+            color: #c62828;
+        }
+        .indicator {
+            background-color: #c62828;
+        }
+    }
+    &__wrapper {
+        margin-top: 15px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 390px));
+        grid-template-rows: repeat(3, minmax(200px, 390px));
+        &-item {
+            
+        }
+    }
+}

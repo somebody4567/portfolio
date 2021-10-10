@@ -3,11 +3,64 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/fonts.min.css">
+	<!-- <link rel="stylesheet" href="css/animate.css"> -->
 	<link rel="stylesheet" href="css/style.min.css">
-	<title>Gulp</title>
+	<title>Project</title>
 </head>
 <body>
-	<img src="img/4k.jpg" alt="">
+	<main class="main">
+		<header class="header">
+			<nav class="header__nav">
+				<div class="container main__container">
+					<ul class="header__nav-list">
+						<li class="header__nav-item"><a href="#" class="header__nav-link  header__nav-link_active">Главная</a></li>
+						<li class="header__nav-item"><a href="#" class="header__nav-link">Обо мне</a></li>
+						<li class="header__nav-item"><a href="#" class="header__nav-link">Проекты</a></li>
+						<li class="header__nav-item"><a href="#" class="header__nav-link">Связаться</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<div class="main__block">
+			<h1 class="main__title white-text">
+				Здравствуйте, меня зовут <span class="red-text text-darken-3">Максим</span>.
+			</h1>
+			<h2 class="main__subtitle white-text">Я junior front-end разработчик.</h2>
+			<button class="main__btn btn waves-effect waves-light blue lighten-2">
+				К проектам <span><i class="material-icons">keyboard_backspace</i></span>
+			</button>
+		</div>
+
+		<canvas class="" id="stars"></canvas>
+	</main>
+
+	<section class="projects">
+		<div class="container">
+			<h2 class="projects__h2">Проекты</h2>
+			<div class="projects__divider black"></div>
+			<ul class="tabs projects__tabs">
+				<li class="tab"><a href="#test1">Все</a></li>
+				<li class="tab"><a href="#test2">JavaScript</a></li>
+				<li class="tab"><a href="#test3">React-JS</a></li>
+			</ul>
+			<div class="projects__wrapper">
+				<div class="projects__wrapper-item red darken-1"></div>
+				<div class="projects__wrapper-item red darken-2"></div>
+				<div class="projects__wrapper-item red darken-3"></div>
+				<div class="projects__wrapper-item blue darken-3"></div>
+				<div class="projects__wrapper-item blue darken-1"></div>
+				<div class="projects__wrapper-item blue darken-2"></div>
+
+			</div>
+		</div>
+	</section>
+
+	
+
 	<script src="script.js"></script>
 </body>
 </html>

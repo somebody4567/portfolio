@@ -1,0 +1,33 @@
+.header {
+    &__nav {
+        position: relative;
+        background: rgb(27, 36, 47);
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 3px;
+            background: #64b5f6;
+        }
+        &-item {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+        &-link {
+            transition: 0.2s color;
+            font-weight: 500;
+            font-size: 20px;
+            &:hover {
+                color: #e53935;
+            }
+            &_active {
+                color: #C62828;
+                &:hover {
+                    color: #C62828;
+                }
+            }
+        }
+    }
+}

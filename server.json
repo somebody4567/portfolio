@@ -1,0 +1,63 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "1-й запрос",
+      "author": "я"
+    },
+    {
+      "id": 3,
+      "title": "1-й запрос",
+      "author": "я"
+    },
+    {
+      "title": "1-й запрос",
+      "author": "я",
+      "id": 4
+    },
+    {
+      "title": "1-й запрос",
+      "author": "я",
+      "id": 5
+    },
+    {
+      "title": "1-й запрос",
+      "author": "я",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment1"
+    },
+    {
+      "id": 2,
+      "body": "some comment2fsdfsdf"
+    },
+    {
+      "id": 3,
+      "body": "some comment3"
+    },
+    {
+      "id": 4,
+      "body": "some comment4"
+    },
+    {
+      "id": 5,
+      "body": "some comment5"
+    },
+    {
+      "id": 6,
+      "body": "some comment6"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

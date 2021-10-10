@@ -1,6 +1,7 @@
 import config from './config/apiConfig';
 import './plugins/index';
 import storage from './store/storage';
+import './modules/canvas';
 
 
 
@@ -16,8 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		});
 	}
-
-	
 
 });
 
