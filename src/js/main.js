@@ -2,6 +2,8 @@ import config from './config/apiConfig';
 import './plugins/index';
 import storage from './store/storage';
 import './modules/canvas';
+import projectsCardHover from './views/projectsCardHover';
+import filterCards from './views/filterCards';
 
 
 
@@ -16,6 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
 				document.querySelector('html').classList.add('_no-webp');
 			}
 		});
+
+		projectsCardHover.init();
+		filterCards.init();
 	}
 
 });

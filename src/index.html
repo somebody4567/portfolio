@@ -24,37 +24,85 @@
 				</div>
 			</nav>
 		</header>
-
+		
 		<div class="main__block">
 			<h1 class="main__title white-text">
 				Здравствуйте, меня зовут <span class="red-text text-darken-3">Максим</span>.
 			</h1>
 			<h2 class="main__subtitle white-text">Я junior front-end разработчик.</h2>
-			<button class="main__btn btn waves-effect waves-light blue lighten-2">
+			<a href="#portfolio" class="main__btn btn waves-effect waves-light blue lighten-2">
 				К проектам <span><i class="material-icons">keyboard_backspace</i></span>
-			</button>
+			</a>
 		</div>
 
 		<canvas class="" id="stars"></canvas>
 	</main>
 
-	<section class="projects">
+	<section id="portfolio" class="projects">
 		<div class="container">
 			<h2 class="projects__h2">Проекты</h2>
 			<div class="projects__divider black"></div>
 			<ul class="tabs projects__tabs">
-				<li class="tab"><a href="#test1">Все</a></li>
-				<li class="tab"><a href="#test2">JavaScript</a></li>
-				<li class="tab"><a href="#test3">React-JS</a></li>
+				<li data-type="all" class="tab"><a href="#">Все</a></li>
+				<li data-type="js" class="tab"><a href="#">JavaScript</a></li>
+				<li data-type="react" class="tab"><a href="#">React-JS</a></li>
 			</ul>
 			<div class="projects__wrapper">
-				<div class="projects__wrapper-item red darken-1"></div>
-				<div class="projects__wrapper-item red darken-2"></div>
-				<div class="projects__wrapper-item red darken-3"></div>
-				<div class="projects__wrapper-item blue darken-3"></div>
-				<div class="projects__wrapper-item blue darken-1"></div>
-				<div class="projects__wrapper-item blue darken-2"></div>
-
+				<div class="all js projects__wrapper-item projects__wrapper-item_1 red darken-1 animated">
+					<img src="img/iphone.jpg" alt="projects-main-image" class="projects__wrapper-img">
+					<div class="animated projects__wrapper-overlay white">
+						<div class="projects__wrapper-descr animated">
+							<div class="projects__wrapper-title">some title</div>
+							<div class="projects__wrapper-text">some lorem and ipsum</div>
+						</div>
+						<button class="projects__wrapper-btn btn waves-effect waves-light animated red darken-3">Узнать больше</button>
+					</div>
+				</div>
+				<div class="all js projects__wrapper-item projects__wrapper-item_2 red darken-2 animated">
+					<div class="animated projects__wrapper-overlay white">
+						<div class="projects__wrapper-descr animated">
+							<div class="projects__wrapper-title">some title</div>
+							<div class="projects__wrapper-text">some lorem and ipsum</div>
+						</div>
+						<button class="projects__wrapper-btn btn waves-effect waves-light animated red darken-3">Узнать больше</button>
+					</div>
+				</div>
+				<div class="all react projects__wrapper-item projects__wrapper-item_3 red darken-3 animated">
+					<div class="animated projects__wrapper-overlay white">
+						<div class="projects__wrapper-descr animated">
+							<div class="projects__wrapper-title">some title</div>
+							<div class="projects__wrapper-text">some lorem and ipsum</div>
+						</div>
+						<button class="projects__wrapper-btn btn waves-effect waves-light animated red darken-3">Узнать больше</button>
+					</div>
+				</div>
+				<div class="all js projects__wrapper-item projects__wrapper-item_4 blue darken-3 animated">
+					<div class="animated projects__wrapper-overlay white">
+						<div class="projects__wrapper-descr animated">
+							<div class="projects__wrapper-title">some title</div>
+							<div class="projects__wrapper-text">some lorem and ipsum</div>
+						</div>
+						<button class="projects__wrapper-btn btn waves-effect waves-light animated red darken-3">Узнать больше</button>
+					</div>
+				</div>
+				<div class="all react projects__wrapper-item projects__wrapper-item_5 blue darken-1 animated">
+					<div class="animated projects__wrapper-overlay white">
+						<div class="projects__wrapper-descr animated">
+							<div class="projects__wrapper-title">some title</div>
+							<div class="projects__wrapper-text">some lorem and ipsum</div>
+						</div>
+						<button class="projects__wrapper-btn btn waves-effect waves-light animated red darken-3">Узнать больше</button>
+					</div>
+				</div>
+				<div class="all js projects__wrapper-item projects__wrapper-item_6 blue darken-2 animated">
+					<div class="animated projects__wrapper-overlay white">
+						<div class="projects__wrapper-descr animated">
+							<div class="projects__wrapper-title">some title</div>
+							<div class="projects__wrapper-text">some lorem and ipsum</div>
+						</div>
+						<button class="projects__wrapper-btn btn waves-effect waves-light animated red darken-3">Узнать больше</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
