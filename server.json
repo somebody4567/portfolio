@@ -1,63 +1,25 @@
 {
   "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "id": 2,
-      "title": "1-й запрос",
-      "author": "я"
-    },
-    {
-      "id": 3,
-      "title": "1-й запрос",
-      "author": "я"
-    },
-    {
-      "title": "1-й запрос",
-      "author": "я",
-      "id": 4
-    },
-    {
-      "title": "1-й запрос",
-      "author": "я",
-      "id": 5
-    },
-    {
-      "title": "1-й запрос",
-      "author": "я",
-      "id": 6
-    }
+    
   ],
   "comments": [
-    {
-      "id": 1,
-      "body": "some comment1"
-    },
-    {
-      "id": 2,
-      "body": "some comment2fsdfsdf"
-    },
-    {
-      "id": 3,
-      "body": "some comment3"
-    },
-    {
-      "id": 4,
-      "body": "some comment4"
-    },
-    {
-      "id": 5,
-      "body": "some comment5"
-    },
-    {
-      "id": 6,
-      "body": "some comment6"
-    }
+    
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "projects": [
+    {
+      "dataAttribute": "firstProject",
+      "pictures": {
+        "1": "img/m.jpg",
+        "2": "img/hulk.jpg",
+        "3": "img/thor.jpg",
+        "4": "img/strange.jpg"
+      },
+      "title": "Modal Header",
+      "text": "1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsa consequatur! Voluptatum magnam cupiditate eos molestiae aliquam unde suscipit minima a, corrupti voluptas? Debitis eveniet esse amet nesciunt dolorem voluptates?",
+      "linkToSite": "https://www.youtube.com/watch?v=kupwmF72Plo&t=1s"
+    }
+  ]
 }

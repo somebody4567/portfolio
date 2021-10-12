@@ -1,3 +1,5 @@
 import 'materialize-css/dist/js/materialize';
 
-M.AutoInit();
+const tabs = document.querySelector('.projects__tabs');
+M.Tabs.init(tabs);
+

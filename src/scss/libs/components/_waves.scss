@@ -58,6 +58,9 @@
   &.waves-teal .waves-ripple {
     background-color: rgba(0, 150, 136, 0.70);
   }
+  &.waves-grey .waves-ripple {
+    background-color: #9e9e9e;
+  }
 
   // Style input button bug.
   input[type="button"], input[type="reset"], input[type="submit"] {

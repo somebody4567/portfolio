@@ -4,7 +4,8 @@ import storage from './store/storage';
 import './modules/canvas';
 import projectsCardHover from './views/projectsCardHover';
 import filterCards from './views/filterCards';
-
+import calcScrollBarOffset from './modules/calcScrollBarOffset';
+import modalConfig from './modules/modalConfiguration';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -21,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		projectsCardHover.init();
 		filterCards.init();
+		modalConfig.init();
+		storage.init();
 	}
 
 });

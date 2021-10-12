@@ -7,6 +7,9 @@ class Storage {
     }
 
     init() {
+        api.getRequest().then(res => {
+            console.log(res.data);
+        });
     }
 }
 
