@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="css/fonts.min.css">
-	<!-- <link rel="stylesheet" href="css/animate.css"> -->
+	<link rel="stylesheet" href="css/iconFonts.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>Project</title>
 </head>
 <body>
-	<main class="main">
+	<main id="main" class="main scrollspy">
 		<header class="header">
 			<nav class="header__nav">
 				<div class="container main__container">
 					<ul class="header__nav-list">
-						<li class="header__nav-item"><a href="#" class="header__nav-link  header__nav-link_active">Главная</a></li>
+						<li class="header__nav-item"><a href="#main" class="header__nav-link">Главная</a></li>
 						<li class="header__nav-item"><a href="#" class="header__nav-link">Обо мне</a></li>
-						<li class="header__nav-item"><a href="#" class="header__nav-link">Проекты</a></li>
-						<li class="header__nav-item"><a href="#" class="header__nav-link">Связаться</a></li>
+						<li class="header__nav-item"><a href="#portfolio" class="header__nav-link">Проекты</a></li>
+						<li class="header__nav-item"><a href="#contact" class="header__nav-link">Связаться</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -35,13 +34,13 @@
 			</a>
 		</div>
 
-		<canvas id="stars"></canvas>
+		<canvas id="bubbles"></canvas>
 	</main>
 
-	<section id="portfolio" class="projects">
+	<section id="portfolio" class="projects scrollspy">
 		<div class="container">
-			<h2 class="projects__h2">Проекты</h2>
-			<div class="projects__divider black"></div>
+			<h2 class="title projects__h2">Проекты</h2>
+			<div class="divider black"></div>
 			<ul class="tabs projects__tabs">
 				<li data-type="all" class="tab"><a href="#">Все</a></li>
 				<li data-type="js" class="tab"><a href="#">JavaScript</a></li>
@@ -64,7 +63,7 @@
 							<div class="projects__wrapper-title">some title</div>
 							<div class="projects__wrapper-text">some lorem and ipsum</div>
 						</div>
-						<button class="projects__wrapper-btn btn waves-effect waves-light animated red darken-3">Узнать больше</button>
+						<button data-modal="secondProject" class="projects__wrapper-btn btn waves-effect waves-light animated red darken-3">Узнать больше</button>
 					</div>
 				</div>
 				<div class="all react projects__wrapper-item projects__wrapper-item_3 red darken-3 animated">
@@ -73,7 +72,7 @@
 							<div class="projects__wrapper-title">some title</div>
 							<div class="projects__wrapper-text">some lorem and ipsum</div>
 						</div>
-						<button class="projects__wrapper-btn btn waves-effect waves-light animated red darken-3">Узнать больше</button>
+						<button data-modal="thirdProject" class="projects__wrapper-btn btn waves-effect waves-light animated red darken-3">Узнать больше</button>
 					</div>
 				</div>
 				<div class="all js projects__wrapper-item projects__wrapper-item_4 blue darken-3 animated">
@@ -82,7 +81,7 @@
 							<div class="projects__wrapper-title">some title</div>
 							<div class="projects__wrapper-text">some lorem and ipsum</div>
 						</div>
-						<button class="projects__wrapper-btn btn waves-effect waves-light animated red darken-3">Узнать больше</button>
+						<button data-modal="fourthProject" class="projects__wrapper-btn btn waves-effect waves-light animated red darken-3">Узнать больше</button>
 					</div>
 				</div>
 				<div class="all react projects__wrapper-item projects__wrapper-item_5 blue darken-1 animated">
@@ -91,7 +90,7 @@
 							<div class="projects__wrapper-title">some title</div>
 							<div class="projects__wrapper-text">some lorem and ipsum</div>
 						</div>
-						<button class="projects__wrapper-btn btn waves-effect waves-light animated red darken-3">Узнать больше</button>
+						<button data-modal="fivethProject" class="projects__wrapper-btn btn waves-effect waves-light animated red darken-3">Узнать больше</button>
 					</div>
 				</div>
 				<div class="all js projects__wrapper-item projects__wrapper-item_6 blue darken-2 animated">
@@ -100,14 +99,50 @@
 							<div class="projects__wrapper-title">some title</div>
 							<div class="projects__wrapper-text">some lorem and ipsum</div>
 						</div>
-						<button class="projects__wrapper-btn btn waves-effect waves-light animated red darken-3">Узнать больше</button>
+						<button data-modal="sixthProject" class="projects__wrapper-btn btn waves-effect waves-light animated red darken-3">Узнать больше</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<section id="contact" class="contact scrollspy">
+		<div class="container">
+			<h3 class="title contact__title white-text">Связаться</h3>
+			<div class="divider white"></div>
+
+			<form action="#" class="contact__form">
+				<div class="input-field contact__form-name contact__form-item">
+					<i class="white-text material-icons prefix">account_circle</i>
+					<input name="userName" id="icon_prefix" type="text" class="white-text validate">
+					<label class="white-text" for="icon_prefix">Ваше имя</label>
+				</div>
+				<div class="input-field contact__form-email contact__form-item">
+					<i class="material-icons white-text prefix">email</i>
+					<input name="email" id="icon_email" type="email" class="white-text validate">
+					<label class="white-text" for="icon_email">Email</label>
+				</div>
+				<div class="input-field contact__form-textarea contact__form-item">
+					<i class="white-text material-icons prefix">mode_edit</i>
+					<textarea name="textarea" id="icon_prefix2" class="white-text materialize-textarea"></textarea>
+					<label class="white-text" for="icon_prefix2">Текст сообщения</label>
+				</div>
+				<button class="contact__form-btn btn waves-effect waves-light indigo lighten-1" type="submit" name="action">Отправить
+					<i class="material-icons right">send</i>
+				</button>
+			</form>
+		</div>
+	</section>
 	
+	<footer class="media">
+		<div class="container">
+			<div class="media__block">
+				<a href="#" class="btn-floating indigo lighten-1 white-text media__block-item"><i class="icon-instagram"></i></a>
+				<a href="#" class="btn-floating indigo lighten-1 white-text media__block-item"><i class="icon-telegram"></i></a>
+				<a href="#" class="btn-floating indigo lighten-1 white-text media__block-item"><i class="material-icons"></i></a>
+			</div>
+		</div>
+	</footer>
 
 
 	<script src="script.js"></script>

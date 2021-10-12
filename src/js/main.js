@@ -1,10 +1,9 @@
 import config from './config/apiConfig';
 import './plugins/index';
 import storage from './store/storage';
-import './modules/canvas';
+import './modules/bubblesCanvas';
 import projectsCardHover from './views/projectsCardHover';
 import filterCards from './views/filterCards';
-import calcScrollBarOffset from './modules/calcScrollBarOffset';
 import modalConfig from './modules/modalConfiguration';
 
 
@@ -23,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		projectsCardHover.init();
 		filterCards.init();
 		modalConfig.init();
-		storage.init();
 	}
 
 });

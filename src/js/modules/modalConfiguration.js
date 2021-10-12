@@ -42,6 +42,8 @@ class ModalConfiguration {
                             <div class="modal__content">
                                 <div class="modal__content-top">
                                     <div class="modal__content-block swiper">
+                                        <div class="modal__content-left waves-effect waves-light"><i class="material-icons">keyboard_arrow_left</i></div>
+					                    <div class="modal__content-right waves-effect waves-light"><i class="material-icons">keyboard_arrow_right</i></div>
                                         ${swiperSlides.outerHTML}
                                     </div>
                                 </div>

@@ -1,0 +1,21 @@
+.media {
+    background-color: #1b242f;
+    padding: 70px 0;
+    &__block {
+        margin: 0 auto;
+        width: 250px;
+    }
+    &__block, &__block-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-item {
+            border: 1px solid #3f51b5;
+            justify-content: center;
+        }
+        &-img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

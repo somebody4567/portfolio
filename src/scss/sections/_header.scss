@@ -1,4 +1,7 @@
 .header {
+    width: 100%;
+    position: fixed;
+    z-index: 11;
     &__nav {
         position: relative;
         background: rgb(27, 36, 47);
@@ -22,11 +25,11 @@
             &:hover {
                 color: #e53935;
             }
-            &_active {
+        }
+        &-link.active {
+            color: #C62828;
+            &:hover {
                 color: #C62828;
-                &:hover {
-                    color: #C62828;
-                }
             }
         }
     }
