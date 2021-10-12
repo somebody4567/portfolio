@@ -4,7 +4,7 @@
 // index.js нужен для последующего удобного импорта только лишь одного этого файла.
 
 import './materialize';
-import './swiper';
+// import './swiper';
 
 
 

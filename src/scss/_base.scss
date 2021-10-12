@@ -47,6 +47,10 @@ $mainColor: #000;
     // scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 input {
     border: none;
     outline: none;

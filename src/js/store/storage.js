@@ -3,13 +3,11 @@ import config from '../config/apiConfig';
 
 class Storage {
     constructor() {
-        this.countries = null;
+        this.projects = null;
     }
 
     init() {
-        api.getRequest().then(res => {
-            console.log(res.data);
-        });
+        this.projects = api.getRequest();
     }
 }
 

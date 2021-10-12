@@ -12,10 +12,11 @@
     {
       "dataAttribute": "firstProject",
       "pictures": {
-        "1": "img/m.jpg",
-        "2": "img/hulk.jpg",
-        "3": "img/thor.jpg",
-        "4": "img/strange.jpg"
+        "0": "img/m.jpg",
+        "1": "img/hulk.jpg",
+        "2": "img/thor.jpg",
+        "3": "img/strange.jpg",
+        "length": "4"
       },
       "title": "Modal Header",
       "text": "1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsa consequatur! Voluptatum magnam cupiditate eos molestiae aliquam unde suscipit minima a, corrupti voluptas? Debitis eveniet esse amet nesciunt dolorem voluptates?",
