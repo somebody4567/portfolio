@@ -12,10 +12,13 @@
         &-item {
             border: 1px solid #3f51b5;
             justify-content: center;
-        }
-        &-img {
-            width: 20px;
-            height: 20px;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            picture {
+                height: 30px;
+            }
         }
     }
 }
