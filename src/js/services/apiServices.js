@@ -1,6 +1,4 @@
 import config from '../config/apiConfig';
-import $ from 'jquery';
-
 class Api {
     constructor() {
         this.forms = document.querySelectorAll('form');
@@ -14,7 +12,7 @@ class Api {
     async postMessageToEmail(form) {
         const formData = new FormData(form);
 
-        fetch('smart.php', {
+        fetch(config.urlPost, {
             method: "POST",
             body: formData
         })
