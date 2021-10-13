@@ -5,6 +5,7 @@ import './modules/bubblesCanvas';
 import projectsCardHover from './views/projectsCardHover';
 import filterCards from './views/filterCards';
 import modalConfig from './modules/modalConfiguration';
+import api from './services/apiServices';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -22,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		projectsCardHover.init();
 		filterCards.init();
 		modalConfig.init();
+		api.onSubmit();
 	}
 
 });

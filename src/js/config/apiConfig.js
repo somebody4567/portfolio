@@ -1,6 +1,7 @@
 class Config {
     constructor() {
-
+        this.urlGet = 'http://localhost:3000/projects';
+        this.urlPost = 'mailer/smart.php';
     }
 
     testWebP(callback) {
