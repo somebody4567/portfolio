@@ -13,7 +13,7 @@ class Config {
     }
 
     getSpinnerHTML() {
-        return `<div class="preloader-wrapper big active">
+        return `<div style="width:28px; height:28px;" class="preloader-wrapper active">
         <div class="spinner-layer spinner-blue">
           <div class="circle-clipper left">
             <div class="circle"></div>

@@ -1,8 +1,9 @@
 import config from '../config/apiConfig';
+import {returnSuccessToast, returnFailureToast} from '../plugins/materialize';
 class Api {
     constructor() {
         this.forms = document.querySelectorAll('form');
-        this.axios = require('axios');
+        this.submitBtn = document.querySelector('.contact__form-btn');
     }
 
     async getRequest() {
@@ -10,22 +11,25 @@ class Api {
     }
 
     async postMessageToEmail(form) {
-        const formData = new FormData(form);
-
-        fetch(config.urlPost, {
+        fetch('smart.php', {
             method: "POST",
-            body: formData
+            body: new FormData(form)
         })
-        .then(data => console.log(data))
-        .catch()
-        .finally(() => form.reset());
-
+        .then(() => returnSuccessToast())
+        .catch(() => returnFailureToast())
+        .finally(() => {
+            form.reset();
+            this.submitBtn.innerHTML = `Отправить
+             <i class="material-icons right">send</i> 
+            `;
+        });
     }
 
     async onSubmit() {
         this.forms.forEach(form => {
             form.addEventListener('submit', e => {
                 e.preventDefault();
+                this.submitBtn.innerHTML = config.getSpinnerHTML();
                 this.postMessageToEmail(form);
             });
         });
