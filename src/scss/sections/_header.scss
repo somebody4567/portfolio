@@ -2,6 +2,10 @@
     width: 100%;
     position: fixed;
     z-index: 11;
+    transition: 0.3s all;
+    &.off {
+        transform: translateY(-100%);
+    }
     &__nav {
         position: relative;
         background: rgb(27, 36, 47);

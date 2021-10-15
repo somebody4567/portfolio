@@ -4,6 +4,7 @@ class Api {
     constructor() {
         this.forms = document.querySelectorAll('form');
         this.submitBtn = document.querySelector('.contact__form-btn');
+        this.axios = require('axios').default;
     }
 
     async getRequest() {

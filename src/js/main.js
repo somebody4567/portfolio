@@ -6,6 +6,8 @@ import projectsCardHover from './views/projectsCardHover';
 import filterCards from './views/filterCards';
 import modalConfig from './modules/modalConfiguration';
 import api from './services/apiServices';
+import workWithNavbar from './modules/workWithNavbar';
+import animateElemsByScroll from './modules/animateElemsByScroll';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -24,8 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		filterCards.init();
 		modalConfig.init();
 		api.onSubmit();
+		workWithNavbar.init();
+		animateElemsByScroll.init();
 	}
-
 });
 
 
