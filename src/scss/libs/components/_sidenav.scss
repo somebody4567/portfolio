@@ -1,6 +1,6 @@
 .sidenav {
   position: fixed;
-  width: $sidenav-width;
+  width: 255px;
   left: 0;
   top: 0;
   margin: 0;
@@ -211,6 +211,6 @@
   opacity: 0;
   height: 120vh;
   background-color: rgba(0,0,0,.5);
-  z-index: 997;
+  z-index: 996;
   display: none;
 }

@@ -8,6 +8,7 @@ import modalConfig from './modules/modalConfiguration';
 import api from './services/apiServices';
 import workWithNavbar from './modules/workWithNavbar';
 import animateElemsByScroll from './modules/animateElemsByScroll';
+import workWithSidebar from './modules/workWithSidebar';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		api.onSubmit();
 		workWithNavbar.init();
 		animateElemsByScroll.init();
+		workWithSidebar.init();
 	}
 });
 

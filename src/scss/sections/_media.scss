@@ -12,6 +12,11 @@
         &-item {
             border: 1px solid #3f51b5;
             justify-content: center;
+            transition: 0.8s all;
+            transform: scale(0);
+            &._active {
+                transform: scale(1);
+            }
             img {
                 width: 20px;
                 height: 20px;
@@ -24,5 +29,8 @@
     &__copyright {
         margin-top: 25px;
         font-size: 15px;
+    }
+    @media (max-width:$md4+px) { 
+        padding: 40px 0;
     }
 }

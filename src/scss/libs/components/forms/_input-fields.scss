@@ -30,7 +30,7 @@ textarea.materialize-textarea {
   border-radius: 0;
   outline: none;
   height: $input-height;
-  width: 100%;
+  // width: 100%;
   font-size: $input-font-size;
   margin: $input-margin;
   padding: $input-padding;
@@ -102,7 +102,7 @@ textarea.materialize-textarea {
 
   // Full width label when using validate for error messages
   &.validate + label {
-    width: 100%;
+    /* width: 100%; */
   }
 
   // Form Message Shared Styles

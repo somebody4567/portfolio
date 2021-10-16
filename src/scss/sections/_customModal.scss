@@ -64,6 +64,11 @@
             right: 13px;
             font-size: 30px;
             border-radius: 50%;
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: rgb(175, 175, 175);
+                }
+            }
         }
         &-bottom {
             padding: 13px 20px 14px;

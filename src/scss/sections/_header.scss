@@ -3,6 +3,7 @@
     position: fixed;
     z-index: 11;
     transition: 0.3s all;
+    
     &.off {
         transform: translateY(-100%);
     }
@@ -35,6 +36,39 @@
             &:hover {
                 color: #C62828;
             }
+        }
+    }
+    &__hamburger, #dropdown__menu {
+        display: none;
+    }
+    @media (max-width:$md3+px) {
+        &__sidenav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            li a {
+                font-size: 25px;
+            }
+        }
+        &__nav {
+            height: 45px;
+        }
+        #dropdown__menu {
+            display: block;
+        }
+        &__hamburger {
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+            font-size: 34px;
+            i {
+                border-radius: 100%;
+            }
+        }
+        &__nav-list {
+            display: none;
         }
     }
 }

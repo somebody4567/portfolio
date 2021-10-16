@@ -14,12 +14,10 @@ class AnimateElemsByScroll {
                 }, 300);
             }
         } catch(e) {}
-
-        console.log(this.animItems);
     }
 
-    animOnScroll() {
-        for (let index = 0; index < (this.animItems).length; index++) {
+    /* animOnScroll() {
+        for (let index = 0; index < this.animItems.length; index++) {
             const animItem = this.animItems[index];
             const animItemHeight = animItem.offsetHeight;
             const animItemOffset = this.offset(animItem).top;
@@ -32,19 +30,33 @@ class AnimateElemsByScroll {
 
             if ((window.pageYOffset > animItemOffset - animItemPoint) && window.pageYOffset < (animItemOffset + animItemHeight)) {
                 animItem.classList.add('_active');
-            } /* else {
-                if (!animItem.classList.contains('_anim-no-hide')) {
-                    animItem.classList.remove('_active');
-                }
-            } */
+            }
         }
+    } */
+
+    animOnScroll() {
+        this.animItems.forEach(item => {
+            
+            const animItemHeight = item.offsetHeight; //вся высота эл 70px 
+            const animItemOffset = this.offset(item).top;
+            const animStart = 2; // когда начнется анимация
+
+            let animItemPoint = window.innerHeight - animItemHeight / animStart; //  500px - 70 / 2
+            if (animItemHeight > window.innerHeight) {
+                animItemPoint = window.innerHeight - window.innerHeight / animStart;
+            }
+
+            if ((window.pageYOffset > animItemOffset - animItemPoint) && window.pageYOffset < (animItemOffset + animItemHeight)) {
+                item.classList.add('_active');
+            }
+        });
     }
+    
 
     offset(el) {
         const rect = el.getBoundingClientRect(),
-              scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
               scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
+        return { top: rect.top + scrollTop };
     }
 }
 
