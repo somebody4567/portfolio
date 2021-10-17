@@ -16,15 +16,12 @@
 			<nav class="header__nav">
 				<div class="container main__container">
 					<ul class="header__nav-list">
-						<li class="header__nav-item"><a href="#main" class="header__nav-link">Главная</a></li>
-						<li class="header__nav-item"><a href="#skills" class="header__nav-link">Навыки</a></li>
-						<li class="header__nav-item"><a href="#portfolio" class="header__nav-link">Проекты</a></li>
-						<li class="header__nav-item"><a href="#contact" class="header__nav-link">Связаться</a></li>
+						<li class="header__nav-item"><a data-link href="#main" class="header__nav-link">Главная</a></li>
+						<li class="header__nav-item"><a data-link href="#skills" class="header__nav-link">Навыки</a></li>
+						<li class="header__nav-item"><a data-link href="#portfolio-section" class="header__nav-link">Проекты</a></li>
+						<li class="header__nav-item"><a data-link href="#contact" class="header__nav-link">Связаться</a></li>
 					</ul>
-					<!-- <div class="header__hamburger waves-effect waves-light material-icons">menu</div> -->
-					
 					<a href="#!" data-target="slide-out" class="header__hamburger sidenav-trigger"><i class="material-icons waves-effect waves-light">menu</i></a>
-					
 				</div>
 			</nav>
 		</header>
@@ -114,9 +111,9 @@
 		</div>
 	</section>
 
-	<section id="portfolio" class="projects scrollspy">
+	<section id="portfolio-section" class="projects scrollspy">
 		<div class="container">
-			<h2 class="title projects__h2 _anim-items">Проекты</h2>
+			<h2 id="portfolio" class="title projects__h2 _anim-items">Проекты</h2>
 			<div class="projects__divider divider black _anim-items"></div>
 			<ul class="tabs projects__tabs">
 				<li data-type="all" class="tab"><a href="#">Все</a></li>
@@ -187,21 +184,20 @@
 		<div class="container">
 			<h3 class="title contact__title white-text _anim-items">Связаться</h3>
 			<div class="contact__divider divider white _anim-items"></div>
-
 			<form action="#" class="contact__form _anim-items">
 				<div class="input-field contact__form-name contact__form-item">
 					<i class="white-text material-icons prefix">account_circle</i>
-					<input name="name" id="icon_prefix" type="text" class="white-text validate">
+					<input name="name" id="icon_prefix" type="text" class="white-text validate contact__form-input _error">
 					<label class="white-text" for="icon_prefix">Ваше имя</label>
 				</div>
 				<div class="input-field contact__form-email contact__form-item">
 					<i class="material-icons white-text prefix">email</i>
-					<input name="email" id="icon_email" type="email" class="white-text validate">
+					<input name="email" id="icon_email" type="email" class="white-text validate contact__form-input _error">
 					<label class="white-text" for="icon_email">Email</label>
 				</div>
 				<div class="input-field contact__form-textarea contact__form-item">
 					<i class="white-text material-icons prefix">mode_edit</i>
-					<textarea name="textarea" id="icon_prefix2" class="white-text materialize-textarea"></textarea>
+					<textarea name="textarea" id="icon_prefix2" class="white-text materialize-textarea contact__form-input _error"></textarea>
 					<label class="white-text" for="icon_prefix2">Текст сообщения</label>
 				</div>
 				<button class="contact__form-btn btn waves-effect waves-light indigo lighten-1" type="submit" name="action">Отправить
@@ -222,10 +218,14 @@
 	</footer>
 
 	<ul id="slide-out" class="sidenav header__sidenav">
-		<li><a href="#main">Главная</a></li>
-		<li><a href="#skills">Навыки</a></li>
-		<li><a href="#portfolio">Проекты</a></li>
-		<li><a href="#contact">Связаться</a></li>
+		<!-- <li><a data-to="#main" data-scrollIntoView>Главная</a></li>
+		<li><a data-to=".skills" data-scrollIntoView>Навыки</a></li>
+		<li><a data-to=".projects" data-scrollIntoView>Проекты</a></li>
+		<li><a data-to=".media" data-scrollIntoView>Связаться</a></li> -->
+		<li class="header__nav-item"><a data-link href="#main">Главная</a></li>
+		<li class="header__nav-item"><a data-link href="#skills">Навыки</a></li>
+		<li class="header__nav-item"><a data-link href="#portfolio-section">Проекты</a></li>
+		<li class="header__nav-item"><a data-link href="#contact">Связаться</a></li>
 	</ul>
 
 	<script src="script.js"></script>

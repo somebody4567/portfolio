@@ -1,4 +1,4 @@
-import calcScrollBarOffset from '../modules/calcScrollBarOffset';
+import scrollActions from '../modules/scroll';
 import storage from '../store/storage';
 import swiperSlider from '../plugins/swiper';
 class ModalConfiguration {
@@ -67,8 +67,8 @@ class ModalConfiguration {
                             this.modalContent.classList.remove('customZoomOut');
                             this.modalContent.classList.add('customZoomIn');
                             document.body.style.overflow = 'hidden';
-                            document.body.style.marginRight = calcScrollBarOffset.init();
-                            this.modal.style.paddingRight = calcScrollBarOffset.init();
+                            document.body.style.marginRight = scrollActions.calcScrollBarOffset();
+                            this.modal.style.paddingRight = scrollActions.calcScrollBarOffset();
                         }
                     });
                 });

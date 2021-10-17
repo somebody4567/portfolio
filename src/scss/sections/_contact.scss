@@ -32,6 +32,14 @@
             i {
                 user-select: none;
             }
+            &._error {
+                i, label {
+                    color: red;
+                }
+                input {
+                    border-color: red;
+                }
+            }
         }
         &-btn {
             margin-top: 1rem;

@@ -1,10 +1,13 @@
-class AnimateElemsByScroll {
+class Scroll {
     constructor() {
         this.animItems = document.querySelectorAll('._anim-items');
         this.animScrollModified = this.animOnScroll.bind(this);
+        this.links = document.querySelectorAll('[data-link]');
+        this.navbar = document.querySelector('.header');
+        this.scrollIntoView = document.querySelectorAll('[data-scrollIntoView]');
     }
 
-    init() {
+    initScrollAnimation() {
         try {
             if (this.animItems.length > 0) {
                 window.addEventListener('scroll', this.animScrollModified);
@@ -15,24 +18,6 @@ class AnimateElemsByScroll {
             }
         } catch(e) {}
     }
-
-    /* animOnScroll() {
-        for (let index = 0; index < this.animItems.length; index++) {
-            const animItem = this.animItems[index];
-            const animItemHeight = animItem.offsetHeight;
-            const animItemOffset = this.offset(animItem).top;
-            const animStart = 2;
-
-            let animItemPoint = window.innerHeight - animItemHeight / animStart;
-            if (animItemHeight > window.innerHeight) {
-                animItemPoint = window.innerHeight - window.innerHeight / animStart;
-            }
-
-            if ((window.pageYOffset > animItemOffset - animItemPoint) && window.pageYOffset < (animItemOffset + animItemHeight)) {
-                animItem.classList.add('_active');
-            }
-        }
-    } */
 
     animOnScroll() {
         this.animItems.forEach(item => {
@@ -51,14 +36,40 @@ class AnimateElemsByScroll {
             }
         });
     }
-    
 
     offset(el) {
         const rect = el.getBoundingClientRect(),
               scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         return { top: rect.top + scrollTop };
     }
+
+    calcScrollBarOffset() {
+        const elem = document.createElement('div');
+        elem.style.cssText = `
+            width: 50px;
+            height: 50px;
+            overflow-y: scroll;
+        `;
+        document.body.append(elem);
+        const scroll = elem.offsetWidth - elem.clientWidth;
+        elem.remove();
+        return `${scroll}px`;
+    }
+
+    correctMovementToSections() {
+        this.links.forEach(link => {
+            link.addEventListener('click', () => {
+                const hrefValue = link.getAttribute('href'); 
+                const elem = document.querySelector(hrefValue);
+                link.removeAttribute('href');
+                elem.scrollIntoView();
+                
+                setTimeout(() => link.setAttribute('href', hrefValue), 4);
+            });
+        });
+    }
 }
 
-const animateElemsByScroll = new AnimateElemsByScroll();
-export default animateElemsByScroll;
+const scrollActions = new Scroll();
+
+export default scrollActions;

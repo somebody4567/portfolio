@@ -1,5 +1,6 @@
 import config from '../config/apiConfig';
 import {returnSuccessToast, returnFailureToast} from '../plugins/materialize';
+import validateInputs from '../modules/validateInputs';
 class Api {
     constructor() {
         this.forms = document.querySelectorAll('form');
@@ -30,8 +31,11 @@ class Api {
         this.forms.forEach(form => {
             form.addEventListener('submit', e => {
                 e.preventDefault();
-                this.submitBtn.innerHTML = config.getSpinnerHTML();
-                this.postMessageToEmail(form);
+                validateInputs.init();
+                if (validateInputs.errors == 0) {
+                    this.submitBtn.innerHTML = config.getSpinnerHTML();
+                    this.postMessageToEmail(form);
+                }
             });
         });
     }
