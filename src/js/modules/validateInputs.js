@@ -10,6 +10,7 @@ class ValidateInputs {
         this.errorCount = 0;
         
         this.inputs.forEach(item => {
+            
             item.classList.remove('_error');
             
             if (item.name == 'email') {
@@ -34,7 +35,7 @@ class ValidateInputs {
                 item.previousElementSibling.classList.add('red-text');
                 item.nextElementSibling.classList.remove('white-text');
                 item.nextElementSibling.classList.add('red-text');
-                /* item.style.boxShadow = 'transparent'; */
+                item.style.boxShadow = 'none';
             }
         });
     }

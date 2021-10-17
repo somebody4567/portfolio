@@ -69,6 +69,7 @@ class ModalConfiguration {
                             document.body.style.overflow = 'hidden';
                             document.body.style.marginRight = scrollActions.calcScrollBarOffset();
                             this.modal.style.paddingRight = scrollActions.calcScrollBarOffset();
+                            this.modal.style.paddingLeft = scrollActions.calcScrollBarOffset();
                         }
                     });
                 });

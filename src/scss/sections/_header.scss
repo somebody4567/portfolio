@@ -19,6 +19,11 @@
             background: #64b5f6;
         }
         &-item {
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: rgba(0,0,0,.1);
+                }
+            }
             &:not(:last-child) {
                 margin-right: 30px;
             }
@@ -33,8 +38,10 @@
         }
         &-link.active {
             color: #C62828;
-            &:hover {
-                color: #C62828;
+            @media (any-hover: hover) {
+                &:hover {
+                    color: #C62828;
+                }
             }
         }
     }

@@ -58,13 +58,15 @@ class Scroll {
 
     correctMovementToSections() {
         this.links.forEach(link => {
-            link.addEventListener('click', () => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                e.stopPropagation();
                 const hrefValue = link.getAttribute('href'); 
                 const elem = document.querySelector(hrefValue);
-                link.removeAttribute('href');
-                elem.scrollIntoView();
-                
-                setTimeout(() => link.setAttribute('href', hrefValue), 4);
+                elem.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
             });
         });
     }

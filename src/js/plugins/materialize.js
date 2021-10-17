@@ -12,7 +12,7 @@ const sidenav = document.querySelector('.sidenav');
 const sidenavChildren = Array.from(sidenav.children);
 
 M.Sidenav.init(sidenav, {
-    preventScrolling: false,
+    
 });
 
 const sidenavInst = M.Sidenav.getInstance(sidenav);
