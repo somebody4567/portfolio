@@ -62,11 +62,7 @@ class Scroll {
                 e.preventDefault();
                 e.stopPropagation();
                 const hrefValue = link.getAttribute('href'); 
-                const elem = document.querySelector(hrefValue);
-                elem.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+                document.querySelector(hrefValue).scrollIntoView();
             });
         });
     }

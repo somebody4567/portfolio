@@ -1,5 +1,5 @@
 import config from '../config/apiConfig';
-import {returnSuccessToast, returnFailureToast} from '../plugins/materialize';
+import {returnSuccessToast, returnFailureToast, returnFormToast} from '../plugins/materialize';
 import validateInputs from '../modules/validateInputs';
 class Api {
     constructor() {
@@ -17,7 +17,13 @@ class Api {
             method: "POST",
             body: new FormData(form)
         })
-        .then(() => returnSuccessToast())
+        .then(res => {
+            if (res.ok) {
+                returnSuccessToast();
+            } else {
+                returnFailureToast();
+            }
+        })
         .catch(() => returnFailureToast())
         .finally(() => {
             form.reset();
@@ -35,6 +41,8 @@ class Api {
                 if (validateInputs.errors == 0) {
                     this.submitBtn.innerHTML = config.getSpinnerHTML();
                     this.postMessageToEmail(form);
+                } else {
+                    returnFormToast();
                 }
             });
         });
