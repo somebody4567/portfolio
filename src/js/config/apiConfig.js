@@ -1,7 +1,7 @@
 class Config {
     constructor() {
-        // this.urlGet = 'http://localhost:3000/projects';
-        this.urlGet = 'https://raw.githubusercontent.com/somebody4567/portfolio/master/server.json';
+        this.urlGet = 'http://localhost:3000/projects';
+        // this.urlGet = 'https://raw.githubusercontent.com/somebody4567/portfolio/master/server.json';
         this.urlPost = 'smart.php';
     }
 

@@ -22,7 +22,8 @@ class ModalConfiguration {
                 const response = storage.projects;
 
                 response.then(data => {
-                    data.data.projects.forEach(({dataAttribute, linkToSite, pictures, text, title}) => {
+                    // data.data.projects
+                    data.data.forEach(({dataAttribute, linkToSite, pictures, text, title}) => {
                         if (attrValue == dataAttribute) {
                             this.modal = document.createElement('div');
                             this.modal.classList.add('modal');
@@ -59,6 +60,11 @@ class ModalConfiguration {
                             document.body.append(this.modal);
                             this.modalContent = this.modal.querySelector('.modal__content');
                             this.close = document.querySelector('.modal__content-close');
+
+                            if (screen.availWidth > 700) {
+                                document.querySelector('.modal__content-wrapper').style.width
+                             = (getComputedStyle(document.querySelector('.modal__content')).width.slice(0, 3)) * pictures.length + 'px';
+                            }
                             // инициализируем слайдер
                             swiperSlider.initSlider();
                             // инициализируем закрытие модального окна
