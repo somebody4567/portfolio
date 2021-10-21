@@ -2396,8 +2396,8 @@ class ModalConfiguration {
                                     <h4 class="modal__content-title">${title}</h4>
                                     <p class="modal__content-text">${text}</p>
                                     <div class="modal__content-links">
-                                        <a href="${linkToSite}" class="btn red darken-3 waves-effect waves-light modal__content-link">На сайт<i class="material-icons">open_in_new</i></a>  
-                                        <a class="modal__content-code" href="${gitHubCode}"><img src="img/skills/gitHub.svg" alt="gitHub-code"></a>
+                                        <a target="_blank" href="${linkToSite}" class="btn red darken-3 waves-effect waves-light modal__content-link">На сайт<i class="material-icons">open_in_new</i></a>  
+                                        <a target="_blank" class="modal__content-code" href="${gitHubCode}"><img src="img/skills/gitHub.svg" alt="gitHub-code"></a>
                                     </div>  
                                 </div>
                             </div>
