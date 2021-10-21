@@ -2156,7 +2156,6 @@ module.exports = {
 __webpack_require__.r(__webpack_exports__);
 class Config {
   constructor() {
-    // this.urlGet = 'db.json';
     this.urlGet = 'https://raw.githubusercontent.com/somebody4567/portfolio/master/server.json';
     this.urlPost = 'smart.php';
   }
@@ -2362,6 +2361,7 @@ class ModalConfiguration {
           data.data.projects.forEach(({
             dataAttribute,
             linkToSite,
+            gitHubCode,
             pictures,
             text,
             title
@@ -2395,7 +2395,10 @@ class ModalConfiguration {
                                     <div class="material-icons modal__content-close waves-effect waves-grey">close</div>
                                     <h4 class="modal__content-title">${title}</h4>
                                     <p class="modal__content-text">${text}</p>
-                                    <a href="${linkToSite}" class="btn red darken-3 waves-effect waves-light modal__content-link">На сайт<i class="material-icons">open_in_new</i></a>  
+                                    <div class="modal__content-links">
+                                        <a href="${linkToSite}" class="btn red darken-3 waves-effect waves-light modal__content-link">На сайт<i class="material-icons">open_in_new</i></a>  
+                                        <a class="modal__content-code" href="${gitHubCode}"><img src="img/skills/gitHub.svg" alt="gitHub-code"></a>
+                                    </div>  
                                 </div>
                             </div>
                             `;

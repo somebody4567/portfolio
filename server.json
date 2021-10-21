@@ -20,7 +20,9 @@
       },
       "title": "Ирвас окна",
       "text": "1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsa consequatur! Voluptatum magnam cupiditate eos molestiae aliquam unde suscipit minima a, corrupti voluptas? Debitis eveniet esse amet nesciunt dolorem voluptates?",
-      "linkToSite": "https://www.youtube.com/watch?v=kupwmF72Plo&t=1s"
+      "linkToSite": "https://somebody4567.github.io/irvasOkna/",
+      "gitHubCode": "https://github.com/somebody4567/irvasOkna"
+
     },
     {
       "dataAttribute": "project2",
@@ -34,7 +36,8 @@
       },
       "title": "КАРТИНЫ.ART",
       "text": "2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsa consequatur! Voluptatum magnam cupiditate eos molestiae aliquam unde suscipit minima a, corrupti voluptas? Debitis eveniet esse amet nesciunt dolorem voluptates?",
-      "linkToSite": "https://www.youtube.com/watch?v=kupwmF72Plo&t=1s"
+      "linkToSite": "https://somebody4567.github.io/pictures-art/dist/",
+      "gitHubCode": "https://github.com/somebody4567/pictures-art"
     },
     {
       "dataAttribute": "project3",
@@ -47,7 +50,8 @@
       },
       "title": "Expedia",
       "text": "3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsa consequatur! Voluptatum magnam cupiditate eos molestiae aliquam unde suscipit minima a, corrupti voluptas? Debitis eveniet esse amet nesciunt dolorem voluptates?",
-      "linkToSite": "https://www.youtube.com/watch?v=kupwmF72Plo&t=1s"
+      "linkToSite": "https://somebody4567.github.io/expedia/",
+      "gitHubCode": "https://github.com/somebody4567/expedia"
     },
     {
       "dataAttribute": "project4",
@@ -57,7 +61,8 @@
       },
       "title": "Avia Tickets",
       "text": "Здесь я применил ",
-      "linkToSite": "https://www.youtube.com/watch?v=kupwmF72Plo&t=1s"
+      "linkToSite": "https://somebody4567.github.io/aviaTickets/",
+      "gitHubCode": "https://github.com/somebody4567/aviaTickets/tree/dev"
     }
   ]
 }

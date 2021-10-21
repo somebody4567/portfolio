@@ -9164,6 +9164,8 @@ p {
 .modal__content-img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .modal__content-close {
   cursor: pointer;
@@ -9189,6 +9191,20 @@ p {
   margin-top: 10px;
   line-height: 135%;
 }
+.modal__content-links {
+  margin-top: 20px;
+  width: 205px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 36px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.modal__content-code img {
+  height: 100%;
+}
 .modal__content-link {
   width: 140px;
   display: -webkit-box;
@@ -9200,7 +9216,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20px;
 }
 .modal__content-link i {
   margin-left: 10px;

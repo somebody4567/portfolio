@@ -1,6 +1,5 @@
 class Config {
     constructor() {
-        // this.urlGet = 'db.json';
         this.urlGet = 'https://raw.githubusercontent.com/somebody4567/portfolio/master/server.json';
         this.urlPost = 'smart.php';
     }
