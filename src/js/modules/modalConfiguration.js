@@ -23,7 +23,7 @@ class ModalConfiguration {
 
                 response.then(data => {
                     // data.data.projects
-                    data.data.forEach(({dataAttribute, linkToSite, pictures, text, title}) => {
+                    data.data.projects.forEach(({dataAttribute, linkToSite, pictures, text, title}) => {
                         if (attrValue == dataAttribute) {
                             this.modal = document.createElement('div');
                             this.modal.classList.add('modal');
